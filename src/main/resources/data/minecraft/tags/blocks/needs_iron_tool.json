@@ -1,0 +1,10 @@
+{
+
+	"replace": false,
+	"values":[
+		"rebud:scapolite_ore",
+		"rebud:deepslate_scapolite_ore",
+		"rebud:scapolite_block"
+	]
+
+}

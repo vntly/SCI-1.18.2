@@ -1,0 +1,22 @@
+modLoader="javafml" 
+loaderVersion="[40,)"
+license="MIT"
+
+[[mods]]
+modId="rebud"
+version="1.18.2-1.0.0"
+displayName="Rebud Mod"
+
+[[dependencies.rebud]] 
+    modId="forge" 
+    mandatory=true 
+    versionRange="[40,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.rebud]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"

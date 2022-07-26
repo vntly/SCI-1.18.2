@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "block_state_property",
+      "block": "minecraft:birch_leaves"
+    }
+  ],
+  "addition": "rebud:food_pear",
+  "type": "rebud:pear_drop"
+}

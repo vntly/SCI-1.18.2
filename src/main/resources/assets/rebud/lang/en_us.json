@@ -1,0 +1,25 @@
+{
+	"item.rebud.scapolite_dust":"Scapolite Dust",
+	"item.rebud.scapolite_ruby":"Scapolite Ruby",
+	"item.rebud.scapolite_copper":"Scapolite Raw",
+	"item.rebud.scapolite":"Scapolite Ignot",
+
+	"item.rebud.fossil_iron":"Fossil Iron",
+	"item.rebud.fossil_copper":"Fossil Copper",
+	"item.rebud.fossil_gold":"Fossil Gold",
+	"item.rebud.fossil_diamond":"Fossil Diamond",
+	"item.rebud.fossil_emerald":"Fossil Emerald",
+
+	"item.rebud.carbon":"Carbon",
+
+	"item.rebud.fried_egg":"Fried Egg",
+	"item.rebud.pear":"Pear",
+
+	"item.rebud.pearl_oo":"Pearl Of Opportunity",
+
+	"block.rebud.scapolite_ore":"Scapolite Ore",
+	"block.rebud.deepslate_scapolite_ore":"Deepslate Scapolite Ore",
+	"block.rebud.scapolite_block":"Scapolite Block",
+
+	"itemGroup.rebudtab":"Vielen Tab"
+}

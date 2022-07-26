@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "rebud:scapolite_dust"
+    },
+    "result": "rebud:food_pear",
+    "experience": 0.1,
+    "cookingtime": 240
+}
