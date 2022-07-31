@@ -1,7 +1,9 @@
 package com.vntly.rebud.core.event.loot;
 import com.google.gson.JsonObject;
+import com.vntly.rebud.core.item.ModItems;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.GsonHelper;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -12,33 +14,35 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nonnull;
 import java.util.List;
-import java.util.Random;
 
 public class ShavingsDropFromStoneAdditionModifier extends LootModifier {
     private final Item addition;
     private final Item addition0;
     private final Item addition1;
-    //private int
-    protected ShavingsDropFromStoneAdditionModifier(LootItemCondition[] conditionsIn, Item addition, Item addition0, Item addition1) {
+    private final Item addition2;
+
+    protected ShavingsDropFromStoneAdditionModifier(LootItemCondition[] conditionsIn, Item addition, Item addition0, Item addition1, Item addition2) {
         super(conditionsIn);
         this.addition = addition;
         this.addition0 = addition0;
         this.addition1 = addition1;
+        this.addition2 = addition2;
     }
 
     @Nonnull
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
-        // generatedLoot is the loot that would be dropped, if we wouldn't add or replace
-        // anything!
-        int b = context.getRandom().nextInt(1, 4);
         float a = context.getRandom().nextFloat();
-        if(a > 0.10f && a <= 0.15f) {
+        generatedLoot.clear();
+        int b = context.getRandom().nextInt(1, 3);
+        if(a > 0.65f && a < 0.80f) {
             generatedLoot.add(new ItemStack(addition, b));
-        } else if(a > 0.45f && a <= 0.48f) {
+        } else if(a > 0.80f && a < 0.92f){
             generatedLoot.add(new ItemStack(addition0, b));
-        } else if(a > 0.98f) {
+        } else if(a > 0.92f){
             generatedLoot.add(new ItemStack(addition1, b));
+        } else {
+            generatedLoot.add(new ItemStack(addition2, b*2));
         }
         return generatedLoot;
     }
@@ -53,7 +57,9 @@ public class ShavingsDropFromStoneAdditionModifier extends LootModifier {
                     new ResourceLocation(GsonHelper.getAsString(object, "addition0")));
             Item addition1 = ForgeRegistries.ITEMS.getValue(
                     new ResourceLocation(GsonHelper.getAsString(object, "addition1")));
-            return new ShavingsDropFromStoneAdditionModifier(conditionsIn, addition, addition0, addition1);
+            Item addition2 = ForgeRegistries.ITEMS.getValue(
+                    new ResourceLocation(GsonHelper.getAsString(object, "addition2")));
+            return new ShavingsDropFromStoneAdditionModifier(conditionsIn, addition, addition0, addition1, addition2);
         }
 
         @Override
@@ -62,6 +68,7 @@ public class ShavingsDropFromStoneAdditionModifier extends LootModifier {
             json.addProperty("addition", ForgeRegistries.ITEMS.getKey(instance.addition).toString());
             json.addProperty("addition0", ForgeRegistries.ITEMS.getKey(instance.addition).toString());
             json.addProperty("addition1", ForgeRegistries.ITEMS.getKey(instance.addition).toString());
+            json.addProperty("addition2", ForgeRegistries.ITEMS.getKey(instance.addition).toString());
 
             return json;
         }

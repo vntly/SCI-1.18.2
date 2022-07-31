@@ -3,10 +3,17 @@
     {
       "condition": "block_state_property",
       "block": "minecraft:deepslate"
+    },
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "item": "rebud:digger_hummer"
+      }
     }
   ],
-  "addition": "rebud:copper_shavings",
-  "addition0": "rebud:gold_shavings",
-  "addition1": "rebud:iron_shavings",
+  "addition": "rebud:shavings_copper",
+  "addition0": "rebud:shavings_gold",
+  "addition1": "rebud:shavings_iron",
+  "addition2": "rebud:pebble",
   "type": "rebud:shavings_from_deepslate"
 }

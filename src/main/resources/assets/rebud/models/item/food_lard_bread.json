@@ -1,6 +1,7 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "rebud:items/scapolite/ingot0"
+		"layer0": "rebud:items/lard1"
 	}
 }
+

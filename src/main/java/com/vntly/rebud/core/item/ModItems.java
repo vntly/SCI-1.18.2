@@ -32,17 +32,17 @@ public class ModItems {
 	public static final RegistryObject<Item> SCAPOLITE_RUBY = ITEMS.register("scapolite_ruby",
     		() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD).stacksTo(16)));
 
-	// SHAVINGS Iron ore shavings
+	// SHAVINGS
 
-	public static final RegistryObject<Item> IRON_SHAVINGS = ITEMS.register("iron_shavings",
+	public static final RegistryObject<Item> SHAVINGS_IRON = ITEMS.register("shavings_iron",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
-	public static final RegistryObject<Item> GOLD_SHAVINGS = ITEMS.register("gold_shavings",
+	public static final RegistryObject<Item> SHAVINGS_GOLD = ITEMS.register("shavings_gold",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
-	public static final RegistryObject<Item> COPPER_SHAVINGS = ITEMS.register("copper_shavings",
+	public static final RegistryObject<Item> SHAVINGS_COPPER = ITEMS.register("shavings_copper",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
 
 
-	// Fossil ores
+	// FOSSILS
 
 	public static final RegistryObject<Item> FOSSIL_IRON = ITEMS.register("fossil_iron",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
@@ -63,19 +63,27 @@ public class ModItems {
 	public static final RegistryObject<Item> PEAR = ITEMS.register("food_pear",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD).food(ModFood.PEAR)));
 
+	public static final RegistryObject<Item> LARD = ITEMS.register("food_lard",
+			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD).food(ModFood.LARD)));
+	public static final RegistryObject<Item> LARD_BREAD = ITEMS.register("food_lard_bread",
+			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD).food(ModFood.LARD_BREAD)));
 
-	// ENDER STAFF
 
-	public static final RegistryObject<Item> RENDER_TEST_ITEM = ITEMS.register("pearl_oo",
-			() -> new PearlOOItem(new Item.Properties().tab(ModCreativeTab.REBUD).durability(64)));
 
 	// OTHER
 
 	public static final RegistryObject<Item> CARBON = ITEMS.register("carbon",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
+	public static final RegistryObject<Item> PEBBLE = ITEMS.register("pebble",
+			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
 
-	public static final RegistryObject<Item> DIGGER_HUMMER = ITEMS.register("digger_hummer",
-			() -> new DiggingHummerItem(Tiers.IRON, 2, 2f, new Item.Properties().tab(ModCreativeTab.REBUD)));
+	public static final RegistryObject<DiggingHummerItem> DIGGER_HUMMER = ITEMS.register("digger_hummer",
+			() -> new DiggingHummerItem(Tiers.STONE, 2, 2f, new Item.Properties().tab(ModCreativeTab.REBUD)));
+
+
+	/* ENDER STAFF */
+	public static final RegistryObject<Item> RENDER_TEST_ITEM = ITEMS.register("pearl_oo",
+			() -> new PearlOOItem(new Item.Properties().tab(ModCreativeTab.REBUD).durability(64)));
 
 
 	public static void register(IEventBus eventBus) {

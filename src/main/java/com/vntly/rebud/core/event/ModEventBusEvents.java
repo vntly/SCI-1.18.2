@@ -19,12 +19,12 @@ public class ModEventBusEvents {
         event.getRegistry().registerAll(
                 new ShavingsDropFromStoneAdditionModifier.Serializer().setRegistryName
                         (new ResourceLocation(RebudMod.MODID,"shavings_from_stone")),
+                new ShavingsDropFromStoneAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(RebudMod.MODID,"shavings_from_deepslate")),
                 new PearDropAdditionModifier.Serializer().setRegistryName
                         (new ResourceLocation(RebudMod.MODID,"pear_drop")),
-                new ShavingsDropFromStoneAdditionModifier.Serializer().setRegistryName
-                        (new ResourceLocation(RebudMod.MODID,"shavings_from_deepslate"))
-
-
+                new LardDropAdditionModifier.Serializer().setRegistryName
+                        (new ResourceLocation(RebudMod.MODID,"lard_drop"))
         );
     }
 }
