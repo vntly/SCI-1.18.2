@@ -76,14 +76,19 @@ public class ModItems {
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
 	public static final RegistryObject<Item> PEBBLE = ITEMS.register("pebble",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
+	public static final RegistryObject<Item> REINFORCED_COPPER= ITEMS.register("reinforced_copper",
+			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
+	public static final RegistryObject<Item> PEBBLE_DEEPSLATE = ITEMS.register("pebble_deepslate",
+			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
+
 
 	public static final RegistryObject<DiggingHummerItem> DIGGER_HUMMER = ITEMS.register("digger_hummer",
-			() -> new DiggingHummerItem(Tiers.STONE, 2, 2f, new Item.Properties().tab(ModCreativeTab.REBUD)));
+			() -> new DiggingHummerItem(Tiers.STONE, 2, 2f, new Item.Properties().tab(ModCreativeTab.REBUD).durability(12)));
 
 
 	/* ENDER STAFF */
 	public static final RegistryObject<Item> RENDER_TEST_ITEM = ITEMS.register("pearl_oo",
-			() -> new PearlOOItem(new Item.Properties().tab(ModCreativeTab.REBUD).durability(64)));
+			() -> new PearlOOItem(new Item.Properties().tab(ModCreativeTab.REBUD).durability(128)));
 
 
 	public static void register(IEventBus eventBus) {

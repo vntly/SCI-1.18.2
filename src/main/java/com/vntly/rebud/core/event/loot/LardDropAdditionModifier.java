@@ -25,8 +25,7 @@ public class LardDropAdditionModifier extends LootModifier {
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
         float a = context.getRandom().nextFloat();
-        if (a > 0.01f) {
-            generatedLoot.clear();
+        if (a > 0.9f) {
             generatedLoot.add(new ItemStack(addition, 1));
         }
         return generatedLoot;

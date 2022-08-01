@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "minecraft:stone",
-    "minecraft:deepslate",
-    "minecraft:iron_ore"
+    "minecraft:deepslate"
   ]
 }

@@ -28,7 +28,7 @@ public class PearlOOItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level lvl, Player p, InteractionHand hand) {
         ItemStack itemstack = p.getItemInHand(hand);
         lvl.playSound((Player)null, p.getX(), p.getY(), p.getZ(), SoundEvents.ENDER_PEARL_THROW, SoundSource.NEUTRAL, 0.5F, 0.4F / (lvl.getRandom().nextFloat() * 0.4F + 0.8F));
-        p.getCooldowns().addCooldown(this, 80);
+        p.getCooldowns().addCooldown(this, 120);
         if (!lvl.isClientSide){
            ThrownEnderpearl thrownenderpearl = new ThrownEnderpearl(lvl, p);
             thrownenderpearl.setItem(itemstack);

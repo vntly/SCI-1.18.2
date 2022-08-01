@@ -9,7 +9,7 @@ public class ModCreativeTab {
     public static final CreativeModeTab REBUD = new CreativeModeTab("rebudtab") {
         @Override
         public @NotNull ItemStack makeIcon() {
-            return new ItemStack(ModBlocks.SCAPOLITE_BLOCK.get());
+            return new ItemStack(ModBlocks.SCAPOLITE_ORE.get());
         }
     };
 }
