@@ -37,10 +37,13 @@ public class ShavingsDropFromStoneAdditionModifier extends LootModifier {
         int b = context.getRandom().nextInt(1, 3);
         if(a > 0.65f && a < 0.80f) {
             generatedLoot.add(new ItemStack(addition, b));
+            generatedLoot.add(new ItemStack(addition2, b));
         } else if(a > 0.80f && a < 0.92f){
             generatedLoot.add(new ItemStack(addition0, b));
+            generatedLoot.add(new ItemStack(addition2, b));
         } else if(a > 0.92f){
             generatedLoot.add(new ItemStack(addition1, b));
+            generatedLoot.add(new ItemStack(addition2, b));
         } else {
             generatedLoot.add(new ItemStack(addition2, b*2));
         }

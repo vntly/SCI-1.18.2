@@ -2,7 +2,10 @@ package com.vntly.rebud.core.event;
 
 import com.vntly.rebud.RebudMod;
 import com.vntly.rebud.core.event.loot.*;
+import com.vntly.rebud.core.recipe.CleaningTableRecipe;
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -26,5 +29,9 @@ public class ModEventBusEvents {
                 new LardDropAdditionModifier.Serializer().setRegistryName
                         (new ResourceLocation(RebudMod.MODID,"lard_drop"))
         );
+    }
+    @SubscribeEvent
+    public static void registerRecipeTypes(final RegistryEvent.Register<RecipeSerializer<?>> event) {
+        Registry.register(Registry.RECIPE_TYPE, CleaningTableRecipe.Type.ID, CleaningTableRecipe.Type.INSTANCE);
     }
 }

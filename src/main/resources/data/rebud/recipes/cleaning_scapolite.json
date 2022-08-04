@@ -1,0 +1,12 @@
+
+{
+    "type": "rebud:cleaning",
+    "ingredients": [
+        {
+            "item": "rebud:pebble"
+        }
+    ],
+    "output": {
+        "item": "rebud:scapolite"
+    }
+}

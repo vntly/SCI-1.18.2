@@ -1,11 +1,9 @@
 package com.vntly.rebud.core.item;
 
 import com.vntly.rebud.RebudMod;
-import com.vntly.rebud.core.item.custom.digging_hummer.DiggingHummerItem;
+import com.vntly.rebud.core.item.custom.digging_hummer.DiggingItem;
 import com.vntly.rebud.core.item.custom.pearloo.PearlOOItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -16,7 +14,7 @@ public class ModItems {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, RebudMod.MODID);
 
 
-	// SCAPOLITE
+	/** SCAPOLITE **/
 
 	public static final RegistryObject<Item> SCAPOLITE_DUST = ITEMS.register("scapolite_dust",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
@@ -32,7 +30,7 @@ public class ModItems {
 	public static final RegistryObject<Item> SCAPOLITE_RUBY = ITEMS.register("scapolite_ruby",
     		() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD).stacksTo(16)));
 
-	// SHAVINGS
+	/** SHAVINGS **/
 
 	public static final RegistryObject<Item> SHAVINGS_IRON = ITEMS.register("shavings_iron",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
@@ -42,7 +40,7 @@ public class ModItems {
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
 
 
-	// FOSSILS
+	/** FOSSILS **/
 
 	public static final RegistryObject<Item> FOSSIL_IRON = ITEMS.register("fossil_iron",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
@@ -55,7 +53,8 @@ public class ModItems {
 	public static final RegistryObject<Item> FOSSIL_EMERALD = ITEMS.register("fossil_emerald",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
 
-	// FOOD
+
+	/** FOOD **/
 
 	public static final RegistryObject<Item> FRIED_EGG = ITEMS.register("food_fried_egg",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD).food(ModFood.FRIED_EGG)));
@@ -65,29 +64,52 @@ public class ModItems {
 
 	public static final RegistryObject<Item> LARD = ITEMS.register("food_lard",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD).food(ModFood.LARD)));
+
 	public static final RegistryObject<Item> LARD_BREAD = ITEMS.register("food_lard_bread",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD).food(ModFood.LARD_BREAD)));
 
 
 
-	// OTHER
+	/** OTHER **/
 
 	public static final RegistryObject<Item> CARBON = ITEMS.register("carbon",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
 	public static final RegistryObject<Item> PEBBLE = ITEMS.register("pebble",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
-	public static final RegistryObject<Item> REINFORCED_COPPER= ITEMS.register("reinforced_copper",
-			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
 	public static final RegistryObject<Item> PEBBLE_DEEPSLATE = ITEMS.register("pebble_deepslate",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
 
+	public static final RegistryObject<Item> REINFORCED_COPPER= ITEMS.register("reinforced_copper",
+			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
 
-	public static final RegistryObject<DiggingHummerItem> DIGGER_HUMMER = ITEMS.register("digger_hummer",
-			() -> new DiggingHummerItem(Tiers.STONE, 2, 2f, new Item.Properties().tab(ModCreativeTab.REBUD).durability(12)));
+
+	/** TOOLS **/
+	// CHISELS
+	public static final RegistryObject<Item> CHISEL_FLINT= ITEMS.register("chisel_flint",
+			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD).durability(32)));
+
+	public static final RegistryObject<Item> CHISEL_COPPER= ITEMS.register("chisel_copper",
+			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD).durability(96)));
+
+	public static final RegistryObject<Item> CHISEL_REINFORCED_COPPER= ITEMS.register("chisel_reinforced_copper",
+			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD).durability(256)));
 
 
-	/* ENDER STAFF */
-	public static final RegistryObject<Item> RENDER_TEST_ITEM = ITEMS.register("pearl_oo",
+
+	// DIGGERS
+	public static final RegistryObject<Item> DIGGER = ITEMS.register("digger",
+			() -> new DiggingItem(ModTiers.COPPER, 1, 1f,
+					new Item.Properties().tab(ModCreativeTab.REBUD).durability(36)));
+
+	public static final RegistryObject<DiggingItem> DIGGER_HUMMER = ITEMS.register("digger_hummer",
+			() -> new DiggingItem(ModTiers.REINFORCED_COPPER, 1, 1.2f,
+					new Item.Properties().tab(ModCreativeTab.REBUD).durability(128)));
+
+
+
+
+	/** ENDER STAFF **/
+	public static final RegistryObject<Item> PEARL_OF_OPPORTUNITY = ITEMS.register("pearl_oo",
 			() -> new PearlOOItem(new Item.Properties().tab(ModCreativeTab.REBUD).durability(128)));
 
 

@@ -1,7 +1,7 @@
 {
 	"item.rebud.scapolite_dust":"Scapolite Dust",
 	"item.rebud.scapolite_ruby":"Scapolite Ruby",
-	"item.rebud.scapolite_copper":"Scapolite Raw",
+	"item.rebud.scapolite_raw":"Scapolite Raw",
 	"item.rebud.scapolite":"Scapolite Ignot",
 
 	"item.rebud.fossil_iron":"Fossil Iron",
@@ -10,16 +10,33 @@
 	"item.rebud.fossil_diamond":"Fossil Diamond",
 	"item.rebud.fossil_emerald":"Fossil Emerald",
 
-	"item.rebud.carbon":"Carbon",
+	"item.rebud.shavings_iron":"Iron Shavings",
+	"item.rebud.shavings_copper":"Copper Shavings",
+	"item.rebud.shavings_gold":"Gold Shavings",
 
-	"item.rebud.fried_egg":"Fried Egg",
-	"item.rebud.pear":"Pear",
+	"item.rebud.carbon":"Carbon",
+	"item.rebud.pebble":"Pebble",
+	"item.rebud.pebble_deepslate":"Deepslate Pebble",
+	"item.rebud.reinforced_copper":"Reinforced Copper",
+
+	"item.rebud.food_fried_egg":"Fried Egg",
+	"item.rebud.food_pear":"Pear",
+	"item.rebud.food_lard":"Lard",
+	"item.rebud.food_lard_bread":"Lard with bread",
+
+	"item.rebud.chisel_flint":"Flint Chisel",
+	"item.rebud.chisel_copper":"Copper Chisel",
+	"item.rebud.chisel_reinforced_copper":"Reinforced Copper Chisel",
+
+	"item.rebud.digger":"Copper Digger",
+	"item.rebud.digger_hummer":"Reinforced Copper Digger",
 
 	"item.rebud.pearl_oo":"Pearl Of Opportunity",
 
 	"block.rebud.scapolite_ore":"Scapolite Ore",
 	"block.rebud.deepslate_scapolite_ore":"Deepslate Scapolite Ore",
 	"block.rebud.scapolite_block":"Scapolite Block",
+	"block.rebud.cleaning_table":"Cleaning Table",
 
 	"itemGroup.rebudtab":"Vielen Tab"
 }
