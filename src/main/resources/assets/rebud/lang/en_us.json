@@ -10,6 +10,12 @@
 	"item.rebud.fossil_diamond":"Fossil Diamond",
 	"item.rebud.fossil_emerald":"Fossil Emerald",
 
+	"item.rebud.deepslate_fossil_iron":"Deepslate Fossil Iron",
+	"item.rebud.deepslate_fossil_copper":"Deepslate Fossil Copper",
+	"item.rebud.deepslate_fossil_gold":"Deepslate Fossil Gold",
+	"item.rebud.deepslate_fossil_diamond":"Deepslate Fossil Diamond",
+	"item.rebud.deepslate_fossil_emerald":"Deepslate Fossil Emerald",
+
 	"item.rebud.shavings_iron":"Iron Shavings",
 	"item.rebud.shavings_copper":"Copper Shavings",
 	"item.rebud.shavings_gold":"Gold Shavings",

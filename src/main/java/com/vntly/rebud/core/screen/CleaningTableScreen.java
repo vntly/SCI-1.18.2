@@ -29,6 +29,8 @@ public class CleaningTableScreen extends AbstractContainerScreen<CleaningTableMe
 
         if (menu.isCrafting()) {
             blit(pPoseStack, x + 72, y + 37, 176,0, menu.getScaledProgress(), 16);
+        } else if (menu.isHardCrafting()) {
+            blit(pPoseStack, x + 72, y + 37, 176,0, menu.getScaledProgressHard(), 16);
         }
     }
 

@@ -43,7 +43,7 @@ public class ModBlocks {
 			() -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).strength(6F).requiresCorrectToolForDrops()), ModCreativeTab.REBUD);
 
 	public static final RegistryObject<Block> CLEANING_TABLE = registerBlock("cleaning_table",
-			() -> new CleaningTableBlock(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)),
+			() -> new CleaningTableBlock(BlockBehaviour.Properties.copy(Blocks.FURNACE)),
 			ModCreativeTab.REBUD );
 	//  PRIVATE STATICS
 

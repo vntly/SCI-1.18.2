@@ -24,6 +24,10 @@ public class ModTags {
     }
 
     public static class Items {
+
+        public static final TagKey<Item> CHISELS = tag("chisels");
+        public static final TagKey<Item> FOSSILS = tag("fossils");
+        public static final TagKey<Item> HARD_FOSSILS = tag("hard_fossils");
         private static TagKey<Item> tag(String name){
             return ItemTags.create(new ResourceLocation(RebudMod.MODID, name));
         }

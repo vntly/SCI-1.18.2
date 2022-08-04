@@ -3,10 +3,10 @@
     "type": "rebud:cleaning",
     "ingredients": [
         {
-            "item": "rebud:pebble"
+            "item": "rebud:fossil_copper"
         }
     ],
     "output": {
-        "item": "rebud:scapolite"
+        "item": "minecraft:raw_copper"
     }
 }

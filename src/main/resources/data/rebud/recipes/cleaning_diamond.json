@@ -1,0 +1,12 @@
+
+{
+    "type": "rebud:cleaning",
+    "ingredients": [
+        {
+            "item": "rebud:fossil_diamond"
+        }
+    ],
+    "output": {
+        "item": "minecraft:diamond"
+    }
+}

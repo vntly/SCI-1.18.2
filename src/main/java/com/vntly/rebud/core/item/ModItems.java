@@ -53,6 +53,18 @@ public class ModItems {
 	public static final RegistryObject<Item> FOSSIL_EMERALD = ITEMS.register("fossil_emerald",
 			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
 
+	// Deepslate
+	public static final RegistryObject<Item> DEEPSLATE_FOSSIL_IRON = ITEMS.register("deepslate_fossil_iron",
+			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
+	public static final RegistryObject<Item> DEEPSLATE_FOSSIL_GOLD = ITEMS.register("deepslate_fossil_gold",
+			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
+	public static final RegistryObject<Item> DEEPSLATE_FOSSIL_COPPER = ITEMS.register("deepslate_fossil_copper",
+			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
+	public static final RegistryObject<Item> DEEPSLATE_FOSSIL_DIAMOND = ITEMS.register("deepslate_fossil_diamond",
+			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
+	public static final RegistryObject<Item> DEEPSLATE_FOSSIL_EMERALD = ITEMS.register("deepslate_fossil_emerald",
+			() -> new Item(new Item.Properties().tab(ModCreativeTab.REBUD)));
+
 
 	/** FOOD **/
 

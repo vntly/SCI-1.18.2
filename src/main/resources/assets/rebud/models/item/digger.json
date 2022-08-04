@@ -1,6 +1,6 @@
 {
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "rebud:items/tools/digger_hummer"
+		"layer0": "rebud:items/tools/digger"
 	}
 }

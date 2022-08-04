@@ -27,6 +27,7 @@ public class CleaningTableRecipe implements Recipe<SimpleContainer> {
         this.recipeItems = recipeItems;
     }
 
+
     @Override
     public boolean matches(SimpleContainer pContainer, Level pLevel) {
         return recipeItems.get(0).test(pContainer.getItem(0));
