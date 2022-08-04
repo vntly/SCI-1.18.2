@@ -12,7 +12,7 @@ public class ModRecipes {
             DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, RebudMod.MODID);
 
     public static final RegistryObject<RecipeSerializer<CleaningTableRecipe>> CLEANING_SERIALIZERS =
-            SERIALIZERS.register("cleaning  ", () -> CleaningTableRecipe.Serializer.INSTANCE);
+            SERIALIZERS.register("cleaning", () -> CleaningTableRecipe.Serializer.INSTANCE);
 
     public static void register(IEventBus eventBus) {
         SERIALIZERS.register(eventBus);

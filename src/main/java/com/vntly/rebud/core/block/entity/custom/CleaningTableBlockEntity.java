@@ -44,7 +44,7 @@ public class CleaningTableBlockEntity extends BlockEntity implements MenuProvide
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 32;
+    private int maxProgress = 26;
 
     public CleaningTableBlockEntity(BlockPos p_155229_, BlockState p_155230_) {
         super(ModBlockEntities.CLEANING_TABLE_BLOCK_ENTITY.get(), p_155229_, p_155230_);
@@ -106,7 +106,7 @@ public class CleaningTableBlockEntity extends BlockEntity implements MenuProvide
     @Override
     protected void saveAdditional(@NotNull CompoundTag tag) {
         tag.put("inventory", itemHandler.serializeNBT());
-        tag.putInt("cleaning_table.progress", progress);
+        tag.putInt("cleaning.progress", progress);
         super.saveAdditional(tag);
     }
 
@@ -114,7 +114,7 @@ public class CleaningTableBlockEntity extends BlockEntity implements MenuProvide
     public void load(CompoundTag nbt) {
         super.load(nbt);
         itemHandler.deserializeNBT(nbt.getCompound("inventory"));
-        progress = nbt.getInt("cleaning_table.progress");
+        progress = nbt.getInt("cleaning.progress");
     }
 
     public void drops() {

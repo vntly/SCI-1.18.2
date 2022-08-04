@@ -2,12 +2,16 @@ package com.vntly.rebud.core.screen;
 
 import com.vntly.rebud.core.block.ModBlocks;
 import com.vntly.rebud.core.block.entity.custom.CleaningTableBlockEntity;
+import com.vntly.rebud.core.event.ModEventBusEvents;
+import com.vntly.rebud.core.recipe.CleaningTableRecipe;
+import com.vntly.rebud.core.recipe.ModRecipes;
 import com.vntly.rebud.core.screen.slot.ModResultSlot;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.items.CapabilityItemHandler;
