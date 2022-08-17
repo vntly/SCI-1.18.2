@@ -1,9 +1,9 @@
 {
   "replace": false,
   "entries": [
-    "rebud:shavings_from_stone",
-    "rebud:shavings_from_deepslate",
-    "rebud:pear_drop",
-    "rebud:lard_drop"
+    "sci:shavings_from_stone",
+    "sci:shavings_from_deepslate",
+    "sci:pear_drop",
+    "sci:lard_drop"
   ]
 }

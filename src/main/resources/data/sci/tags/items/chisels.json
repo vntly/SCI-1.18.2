@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "sci:chisel_copper",
+    "sci:chisel_flint",
+    "sci:chisel_reinforced_copper"
+  ]
+}

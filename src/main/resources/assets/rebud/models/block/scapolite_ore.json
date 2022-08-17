@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "rebud:blocks/ore_stone0"
-    }
-}

@@ -1,0 +1,50 @@
+{
+	"item.sci.scapolite_dust":"Scapolite Dust",
+	"item.sci.scapolite_ruby":"Scapolite Ruby",
+	"item.sci.scapolite_raw":"Scapolite Raw",
+	"item.sci.scapolite":"Scapolite Ignot",
+
+	"item.sci.fossil_iron":"Fossil Iron",
+	"item.sci.fossil_copper":"Fossil Copper",
+	"item.sci.fossil_gold":"Fossil Gold",
+	"item.sci.fossil_diamond":"Fossil Diamond",
+	"item.sci.fossil_emerald":"Fossil Emerald",
+
+	"item.sci.deepslate_fossil_iron":"Deepslate Fossil Iron",
+	"item.sci.deepslate_fossil_copper":"Deepslate Fossil Copper",
+	"item.sci.deepslate_fossil_gold":"Deepslate Fossil Gold",
+	"item.sci.deepslate_fossil_diamond":"Deepslate Fossil Diamond",
+	"item.sci.deepslate_fossil_emerald":"Deepslate Fossil Emerald",
+
+	"item.sci.shavings_iron":"Iron Shavings",
+	"item.sci.shavings_copper":"Copper Shavings",
+	"item.sci.shavings_gold":"Gold Shavings",
+
+	"item.sci.obsidian_shard":"Obsidian Shard",
+
+	"item.sci.carbon":"Carbon",
+	"item.sci.pebble":"Pebble",
+	"item.sci.pebble_deepslate":"Deepslate Pebble",
+	"item.sci.reinforced_copper":"Reinforced Copper",
+
+	"item.sci.food_fried_egg":"Fried Egg",
+	"item.sci.food_pear":"Pear",
+	"item.sci.food_lard":"Lard",
+	"item.sci.food_lard_bread":"Lard with bread",
+
+	"item.sci.chisel_flint":"Flint Chisel",
+	"item.sci.chisel_copper":"Copper Chisel",
+	"item.sci.chisel_reinforced_copper":"Reinforced Copper Chisel",
+
+	"item.sci.digger":"Copper Digger",
+	"item.sci.digger_hummer":"Reinforced Copper Digger",
+
+	"item.sci.pearl_oo":"Pearl Of Opportunity",
+
+	"block.sci.scapolite_ore":"Scapolite Ore",
+	"block.sci.deepslate_scapolite_ore":"Deepslate Scapolite Ore",
+	"block.sci.scapolite_block":"Scapolite Block",
+	"block.sci.cleaning_table":"Cleaning Table",
+
+	"itemGroup.scitab":"Such Complicated Improvements"
+}

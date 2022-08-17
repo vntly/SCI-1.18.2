@@ -1,0 +1,12 @@
+
+{
+    "type": "sci:cleaning",
+    "ingredients": [
+        {
+            "item": "sci:fossil_diamond"
+        }
+    ],
+    "output": {
+        "item": "minecraft:diamond"
+    }
+}

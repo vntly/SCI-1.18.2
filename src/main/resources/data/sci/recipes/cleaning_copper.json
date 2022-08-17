@@ -1,0 +1,12 @@
+
+{
+    "type": "sci:cleaning",
+    "ingredients": [
+        {
+            "item": "sci:fossil_copper"
+        }
+    ],
+    "output": {
+        "item": "minecraft:raw_copper"
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "sci:fossil_diamond",
+    "sci:fossil_emerald",
+    "sci:deepslate_fossil_iron",
+    "sci:deepslate_fossil_gold",
+    "sci:deepslate_fossil_copper",
+    "sci:deepslate_fossil_diamond",
+    "sci:deepslate_fossil_emerald"
+  ]
+}

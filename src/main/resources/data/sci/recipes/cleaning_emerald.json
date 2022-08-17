@@ -1,0 +1,12 @@
+
+{
+    "type": "sci:cleaning",
+    "ingredients": [
+        {
+            "item": "sci:fossil_emerald"
+        }
+    ],
+    "output": {
+        "item": "minecraft:emerald"
+    }
+}

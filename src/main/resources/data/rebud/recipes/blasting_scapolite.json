@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:blasting",
-    "ingredient": {
-        "item": "rebud:scapolite_raw"
-    },
-    "result": "rebud:scapolite",
-    "experience": 0.1,
-    "cookingtime": 240
-}

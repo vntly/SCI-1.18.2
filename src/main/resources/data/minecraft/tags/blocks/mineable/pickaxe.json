@@ -2,9 +2,9 @@
 
 	"replace": false,
 	"values":[
-		"rebud:scapolite_ore",
-		"rebud:deepslate_scapolite_ore",
-		"rebud:scapolite_block"
+		"sci:scapolite_ore",
+		"sci:deepslate_scapolite_ore",
+		"sci:scapolite_block"
 	]
 
 }

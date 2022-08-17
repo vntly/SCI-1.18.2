@@ -1,0 +1,19 @@
+{
+  "conditions": [
+    {
+      "condition": "block_state_property",
+      "block": "minecraft:stone"
+    },
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "item": "sci:digger_hummer"
+      }
+    }
+  ],
+  "addition": "sci:shavings_copper",
+  "addition0": "sci:shavings_gold",
+  "addition1": "sci:shavings_iron",
+  "addition2": "sci:pebble",
+  "type": "sci:shavings_from_stone"
+}

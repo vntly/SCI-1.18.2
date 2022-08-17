@@ -1,0 +1,12 @@
+
+{
+    "type": "sci:cleaning",
+    "ingredients": [
+        {
+            "item": "sci:fossil_gold"
+        }
+    ],
+    "output": {
+        "item": "minecraft:raw_gold"
+    }
+}

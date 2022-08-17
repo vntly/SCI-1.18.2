@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#C#",
+        "CMC",
+        "CCC"
+    ],
+    "key": {
+        "#": {
+            "tag": "minecraft:planks"
+        },
+        "C": {
+            "item": "minecraft:cobblestone"
+        },
+        "M": {
+            "item": "minecraft:crafting_table"
+        }
+    },
+    "result": {
+        "item": "sci:cleaning_table",
+        "count": 1
+    }
+}

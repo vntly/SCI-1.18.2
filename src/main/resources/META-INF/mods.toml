@@ -3,18 +3,18 @@ loaderVersion="[40,)"
 license="MIT"
 
 [[mods]]
-modId="rebud"
+modId="sci"
 version="1.18.2-1.0.0"
-displayName="Rebud Mod"
+displayName="Such Complicated Improvements[SCI]"
 
-[[dependencies.rebud]] 
+[[dependencies.sci]]
     modId="forge" 
     mandatory=true 
     versionRange="[40,)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.rebud]]
+[[dependencies.sci]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.18.2]"
