@@ -130,7 +130,7 @@ public class CleaningTableBlockEntity extends BlockEntity implements MenuProvide
     }
 
 
-    public static void tick(Level pLevel, BlockPos pPos, BlockState pState, CleaningTableBlockEntity pBlockEntity) {
+    public static void serverTick(Level pLevel, BlockPos pPos, BlockState pState, CleaningTableBlockEntity pBlockEntity) {
         if(hasRecipe(pBlockEntity)) {
             pBlockEntity.progress++;
             setChanged(pLevel, pPos, pState);

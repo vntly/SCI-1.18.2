@@ -2,6 +2,7 @@ package com.vntly.sci.core.block;
 
 import com.vntly.sci.SCIMod;
 import com.vntly.sci.core.block.custom.CleaningTableBlock;
+import com.vntly.sci.core.block.custom.MixingBlock;
 import com.vntly.sci.core.item.ModCreativeTab;
 import com.vntly.sci.core.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -37,8 +38,8 @@ public class ModBlocks {
 	public static final RegistryObject<Block> CLEANING_TABLE = registerBlock("cleaning_table",
 			() -> new CleaningTableBlock(BlockBehaviour.Properties.copy(Blocks.FURNACE)),
 			ModCreativeTab.SCI );
-	public static final RegistryObject<Block> MIXER_BLOCK = registerBlock("mixer_block",
-			() -> new CleaningTableBlock(BlockBehaviour.Properties.copy(Blocks.FURNACE)),
+	public static final RegistryObject<Block> MIXING_BLOCK = registerBlock("mixer_block",
+			() -> new MixingBlock(BlockBehaviour.Properties.copy(Blocks.FURNACE)),
 			ModCreativeTab.SCI );
 
 	//  PRIVATE STATICS

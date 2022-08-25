@@ -7,6 +7,7 @@ import com.vntly.sci.core.item.ModItems;
 import com.vntly.sci.core.painting.ModPaintings;
 import com.vntly.sci.core.recipe.ModRecipes;
 import com.vntly.sci.core.screen.CleaningTableScreen;
+import com.vntly.sci.core.screen.MixingScreen;
 import com.vntly.sci.core.screen.ModMenuTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.common.MinecraftForge;
@@ -39,6 +40,7 @@ public class SCIMod {
 	private void clientSetup(final FMLClientSetupEvent event){
 
 		MenuScreens.register(ModMenuTypes.CLEANING_TABLE_MENU.get(), CleaningTableScreen::new);
+		MenuScreens.register(ModMenuTypes.MIXING_MENU.get(), MixingScreen::new);
 
 	}
 }

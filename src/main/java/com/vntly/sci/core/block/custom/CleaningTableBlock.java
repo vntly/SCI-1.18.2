@@ -96,7 +96,7 @@ public class CleaningTableBlock extends BaseEntityBlock {
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
         return createTickerHelper(pBlockEntityType, ModBlockEntities.CLEANING_TABLE_BLOCK_ENTITY.get(),
-                CleaningTableBlockEntity::tick);
+                CleaningTableBlockEntity::serverTick);
     }
 
 }

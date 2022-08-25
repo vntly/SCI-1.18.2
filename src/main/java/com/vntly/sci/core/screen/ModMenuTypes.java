@@ -17,8 +17,8 @@ public class ModMenuTypes {
 
     public static final RegistryObject<MenuType<CleaningTableMenu>> CLEANING_TABLE_MENU =
             registerMenuType(CleaningTableMenu::new, "cleaning_table_menu");
-    public static final RegistryObject<MenuType<CleaningTableMenu>> MIXER_MENU =
-                registerMenuType(CleaningTableMenu::new, "mixer_menu");
+    public static final RegistryObject<MenuType<MixingMenu>> MIXING_MENU =
+                registerMenuType(MixingMenu::new, "mixing_menu");
 
     private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory,
                                                                                                   String name) {

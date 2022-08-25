@@ -26,7 +26,9 @@ public class ModTags {
 
         public static final TagKey<Item> CHISELS = tag("chisels");
         public static final TagKey<Item> FOSSILS = tag("fossils");
+        public static final TagKey<Item> BASE= tag("base");
         public static final TagKey<Item> HARD_FOSSILS = tag("hard_fossils");
+        public static final TagKey<Item> ADDITION = tag("addition");
         private static TagKey<Item> tag(String name){
             return ItemTags.create(new ResourceLocation(SCIMod.MODID, name));
         }

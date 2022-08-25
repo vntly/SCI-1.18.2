@@ -1,0 +1,16 @@
+
+{
+    "type": "sci:mixing",
+    "ingredients": [
+        {
+            "item": "sci:fossil_iron"
+        },
+        {
+            "item": "sci:carbon"
+        }
+    ],
+    "output": {
+        "item": "minecraft:raw_iron"
+    },
+    "time": 100
+}
